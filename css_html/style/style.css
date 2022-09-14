@@ -203,10 +203,11 @@ h2{
 }
 
 h1.titre{
-    font-size: 8vmin;
+    font-size: 85px;
     text-align: center;
     text-decoration: underline;
     padding-bottom: 5%;
+    font-family: "Agency FB", sans-serif;
     
 }
 
@@ -216,15 +217,20 @@ div.prix{
     justify-content: space-around;
     margin-top: 20px;
     align-items: center;
+    padding-top: 7%;
 }
 
 
 div.info{
-
+    
     max-width:  50%; ;
-    float: left;
-    padding: 0 20px 15vmin 0;
+    padding: 0px 20px 15vmin 5px;
+}
 
+div.all{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 div.text{
@@ -248,17 +254,17 @@ div.text h2{
 }
 
 #btntest{
-    width: 70px;
+    width: 100px;
     height: 40px;
     font-size: 20px;
     text-transform: uppercase;
-    background-color: darkcyan;
+    background-color: rgb(255, 170, 0);
     border-radius: 16px;
     border: 1px;
 }
 
 #btntest:hover{
-    background-color: yellow;
+    background-color: rgb(255, 106, 0);
     transform: scale(1.1);
 }
 
@@ -275,36 +281,6 @@ img {
     display: flex;
     flex-direction: column;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 #creationTitle{
