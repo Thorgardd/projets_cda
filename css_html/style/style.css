@@ -5,13 +5,39 @@
 }
 
 header{
+    display: flex;
+    width: auto;
+    background-color: red;
+    height: 70px;
+}
 
+nav{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+ul{
+    list-style: none;
+    width: 50%;
+}
+
+.buttons{
+    padding-right: 10px;
+    width: 100%;
+    background-color: yellow;
+}
+
+a{
+    text-decoration: none;
+    color: black;
 }
 
 footer{
     bottom: 0;
     background-color: blue;
-    height: 30px;
+    height: 70px;
     display: flex;
-    width: auto;
+    width: 100%;
+    position: fixed;
 }
