@@ -7,12 +7,28 @@
 </head>
 <body>
     <header>
-        <nav>
+        <nav class="navigation">
             <!--<img id="websiteLogo" src="../images/logo.png" alt="Image du logo du site"/>-->
             <h1 class="WebsiteTitle"><a href="index.html">TV Show - Encyclopedia</a></h1>
             <div class="nav">
                 <ul class="buttons">
                     <!-- Todo- rajouter les chemins de redirection -->
+                    <li><a href="inscription.html">Inscription</a></li>
+                    <li><a href="connexion.html">Connexion</a></li>
+                </ul>
+            </div>
+        </nav>
+        <a id="hamburger-btn" class="hamburger-menu">
+            <div class="hamburger-bar"></div>
+            <div class="hamburger-bar"></div>
+            <div class="hamburger-bar"></div>
+        </a>
+        <nav id="navigation-mobile" class="navigation-mobile">
+            <h1 class="WebsiteTitle"><a href="index.html">TV Show - Encyclopedia</a></h1>
+            <div class="nav-mobile">
+                <ul class="buttons">
+                    <!-- Todo- rajouter les chemins de redirection -->
+                    <li><a href="inscription.html">Inscription</a></li>
                     <li><a href="connexion.html">Connexion</a></li>
                 </ul>
             </div>
@@ -22,27 +38,35 @@
     <main>
         <form method="get">
             <div class="form">
-                <h2> Création du compte</h2>
-                <label for="psuedo" class="label">Votre pseudo :
-                    <input type="text" id="psuedo" value="" placeholder="Pseudo"/>
-                </label>
-                <label for="psuedo" class="label">Votre mot de passe :
-                    <input id="password" type="password" value="" placeholder="Mot de passe"/>
-                </label>
-                <label for="email" class="label">Votre mot de passe :
-                    <input id="email" type="email" value="" placeholder="Email"/>
-                </label>
-                <label for="phone" class="label">Votre téléphone :
-                    <input id="phone" type="password" value="" placeholder="0781925412"/>
-                </label>
-                <label for="cgv">
-                    <p id="cgv">J'accepte les conditions générales d'utilisation : </p>
-                    <input type="radio" id="cgv" name="cgv"/>Oui
-                    <input type="radio" id="cgv" name="cgv"/>Non
-                </label>
+                <h2 id="creationTitle"> Création du compte</h2>
+                <div id="creationFormData">
+                    <div class="fieldPseudoCrea">
+                        <label for="psuedo" class="label">Votre pseudo :</label>
+                        <input type="text" id="psuedo" value="" placeholder="Pseudo"/>
+                    </div>
+                    <div class="fieldPassword">
+                        <label for="psuedo" class="label">Votre mot de passe :</label>
+                        <input id="password" type="password" value="" placeholder="Mot de passe"/>
+                    </div>
+                    <div class="fieldEmail">
+                        <label for="email" class="label">Votre email :</label>
+                        <input id="email" type="email" value="" placeholder="Email"/>
+                    </div>
+                    <div class="fieldPhone">
+                        <label for="phone" class="label">Votre téléphone :</label>
+                        <input id="phone" type="password" value="" placeholder="0781925412"/>
+                    </div>
+                </div>
+                <div class="fieldCgv">
+                    <label for="cgv" id="cgv">J'accepte les conditions générales d'utilisation :</label>
+                    <div class="cgvChoice">
+                        <input type="radio" id="cgv" name="cgv"/>Oui
+                        <input type="radio" id="cgv" name="cgv"/>Non
+                    </div>
+                </div>
                 <div id="formButtons">
-                    <button class="btnreset" type="reset">Annuler</button>
-                    <button type="submit">Valider</button>
+                    <button type="reset" class="validationBtn">Annuler</button>
+                    <button type="submit"class="validationBtn">Valider</button>
                 </div>
             </div>
         </form>
@@ -51,5 +75,7 @@
     <footer>
         <h3>Projet réalisé par Benjamin Rorowski et Jérémy Rouviller</h3>
     </footer>
+
+    <script src="../js/script.js"></script>
 </body>
 </html>

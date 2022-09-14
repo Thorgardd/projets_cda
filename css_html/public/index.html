@@ -8,7 +8,7 @@
 <body>
 
     <header>
-        <nav>
+        <nav class="navigation">
             <!--<img id="websiteLogo" src="../images/logo.png" alt="Image du logo du site"/>-->
             <h1 class="WebsiteTitle"><a href="index.html">TV Show - Encyclopedia</a></h1>
             <div class="nav">
@@ -19,25 +19,43 @@
                 </ul>
             </div>
         </nav>
+        <a id="hamburger-btn" class="hamburger-menu">
+            <div class="hamburger-bar"></div>
+            <div class="hamburger-bar"></div>
+            <div class="hamburger-bar"></div>
+        </a>
+        <nav id="navigation-mobile" class="navigation-mobile">
+            <h1 class="WebsiteTitle"><a href="index.html">TV Show - Encyclopedia</a></h1>
+            <div class="nav-mobile">
+                <ul class="buttons">
+                    <!-- Todo- rajouter les chemins de redirection -->
+                    <li><a href="inscription.html">Inscription</a></li>
+                    <li><a href="connexion.html">Connexion</a></li>
+                </ul>
+            </div>
+        </nav>
     </header>
+
 
     <main>
         <div class="articlesSection">
-            <div class="article">
+            <a href="serie3.html" class="article">
                 <img id="mando" src="../images/mandalorian.jpg" alt="Image du Mandalorian"/>
-            </div>
-            <div class="article">
+            </a>
+            <a href="serie1.html" class="article">
                 <img id="whatif" src="../images/whatIf.jpg" alt="Image de la série whatif"/>
-            </div>
-            <div class="article">
+            </a>
+            <a href="serie2.html" class="article">
                 <img id="mrrobot" src="../images/mrrobot.jpg" alt="Image de Mr Robot"/>
-            </div>
+            </a>
         </div>
     </main>
+
 
     <footer>
         <h3>Projet réalisé par Benjamin Rorowski et Jérémy Rouviller</h3>
     </footer>
 
+    <script src="../js/script.js"></script>
 </body>
 </html>
