@@ -84,27 +84,26 @@ form{
     height: 65%;
     display: flex;
     align-items: center;
-}
+    background-color: whitesmoke;
+    border-radius: 10px;
+    box-shadow: -1px 0px 5px 9px rgba(138,138,138,0.55);}
 
 .article1{
     display: flex;
     width: 30%;
     justify-content: center;
-    background-color: red;
 }
 
 .article2{
     display: flex;
     width: 30%;
     justify-content: center;
-    background-color: red;
 }
 
 .article3{
     display: flex;
     width: 30%;
     justify-content: center;
-    background-color: red;
 }
 
 footer{
