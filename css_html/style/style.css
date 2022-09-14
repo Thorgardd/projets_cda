@@ -145,6 +145,7 @@ h1.titre{
     text-align: center;
     text-decoration: underline;
     padding-bottom: 5%;
+    font-family: "Agency FB", sans-serif;
     
 }
 
@@ -154,18 +155,23 @@ div.prix{
     justify-content: space-around;
     margin-top: 20px;
     align-items: center;
+    padding-top: 7%;
 }
 
 
 div.info{
-
     min-width: none;
     max-width:  50%; ;
-    float: left;
     padding: 0px 20px 15vmin 5px;
     
 
 
+}
+
+div.all{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 div.text{
