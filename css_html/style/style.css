@@ -203,10 +203,12 @@ h2{
 }
 
 h1.titre{
+    display: flex;
     font-size: 85px;
-    text-align: center;
+    padding-left: 850px ;
+    justify-content: flex-start;
+    flex-direction: row;
     text-decoration: underline;
-    padding-bottom: 5%;
     font-family: "Agency FB", sans-serif;
     
 }
@@ -229,8 +231,10 @@ div.info{
 
 div.all{
     display: flex;
+    align-items: center;
     flex-direction: row;
     justify-content: center;
+    margin-top: 110px;
 }
 
 div.text{
@@ -418,6 +422,11 @@ label{
     align-items: center;
     gap: 2rem;
     font-size: 28px !important;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
 }
 
 .navigation-mobile.active {
